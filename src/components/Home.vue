@@ -109,6 +109,7 @@ export default {
         showLeaveButton: true,
       });
       this.callFrame = callFrame;
+      
 
       // Add event listeners and join call
       callFrame
@@ -120,7 +121,24 @@ export default {
         .on("left-meeting", leaveCall);
 
       callFrame.join({ url, showFullscreenButton: true });
+          // Sample global theme
+      callFrame.setTheme({
+        colors: {
+          accent: '#286DA8',
+          accentText: '#FFFFFF',
+          background: '#FFFFFF',
+          backgroundAccent: '#FBFCFD',
+          baseText: '#000000',
+          border: '#EBEFF4',
+          mainAreaBg: '#000000',
+          mainAreaBgAccent: '#333333',
+          mainAreaText: '#FFFFFF',
+          supportiveText: '#808080',
+        },
+      });
     },
+
+
     submitJoinRoom(e) {
       e.preventDefault();
       this.joinRoom(this.roomUrl);
