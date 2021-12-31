@@ -1,7 +1,7 @@
 <template>
   <main class="wrapper">
     <div class="home" v-if="status === 'home'">
-      <h2>Daily Prebuilt demo</h2>
+      <h2>Daily Prebuilt</h2>
       <p>Start demo with a new unique room or paste in your own room URL</p>
       <div class="start-call-container">
         <button @click="createAndJoinRoom" :disabled="runningLocally">
@@ -51,6 +51,7 @@ const IFRAME_OPTIONS = {
   maxWidth: "920px",
   border: "1px solid var(--grey)",
   borderRadius: "4px",
+  backgroundColor: 'none',
 };
 
 export default {
