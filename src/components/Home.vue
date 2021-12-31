@@ -51,7 +51,7 @@ const IFRAME_OPTIONS = {
   maxWidth: "920px",
   border: "1px solid var(--grey)",
   borderRadius: "4px",
-  backgroundColor: 'none',
+  backgroundColor: 'transparent',
 };
 
 export default {
