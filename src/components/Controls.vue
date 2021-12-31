@@ -68,23 +68,24 @@ export default {
     toggleMic() {
       this.callFrame.setLocalAudio(!this.callFrame.localAudio());
     },
+
     toggleTheme() {
     this.callFrame.setTheme({
-3	  colors: {
-4	    accent: '#286DA8',
-5	    accentText: '#FFFFFF',
-6	    background: '#FFFFFF',
-7	    backgroundAccent: '#FBFCFD',
-8	    baseText: '#000000',
-9	    border: '#EBEFF4',
-10	    mainAreaBg: '#000000',
-11	    mainAreaBgAccent: '#333333',
-12	    mainAreaText: '#FFFFFF',
-13	    supportiveText: '#808080',
-14	  },
-15	});
+      colors: {
+      accent: '#286DA8',
+      accentText: '#FFFFFF',
+      background: '#FFFFFF',
+      backgroundAccent: '#FBFCFD',
+      baseText: '#000000',
+      border: '#EBEFF4',
+      mainAreaBg: '#000000',
+      mainAreaBgAccent: '#333333',
+      mainAreaText: '#FFFFFF',
+      supportiveText: '#808080',
+      },
+    });
     },
-16	
+
     toggleScreenShare() {
       const participants = this.callFrame.participants();
       if (participants?.local?.screen) {
