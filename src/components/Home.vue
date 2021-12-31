@@ -124,15 +124,15 @@ export default {
           // Sample global theme
       callFrame.setTheme({
         colors: {
-          accent: '#286DA8',
+          accent: '#d911b1',
           accentText: '#FFFFFF',
-          background: '#FFFFFF',
+          background: '#FFFFFF80',
           backgroundAccent: '#FBFCFD',
-          baseText: '#000000',
+          baseText: '#d911b1',
           border: '#EBEFF4',
           mainAreaBg: '#000000',
           mainAreaBgAccent: '#333333',
-          mainAreaText: '#FFFFFF',
+          mainAreaText: '#d911b1',
           supportiveText: '#808080',
         },
       });
