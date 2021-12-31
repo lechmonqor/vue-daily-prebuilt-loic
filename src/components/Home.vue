@@ -126,7 +126,7 @@ export default {
         colors: {
           accent: '#d911b1',
           accentText: '#FFFFFF',
-          background: '#FFFFFF80',
+          background: '#FFFFFF', opacity:'0.9',
           backgroundAccent: '#FBFCFD',
           baseText: '#d911b1',
           border: '#EBEFF4',
