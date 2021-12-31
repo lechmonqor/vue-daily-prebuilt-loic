@@ -17,6 +17,7 @@
     <div>
       <button @click="toggleCamera">Toggle camera</button>
       <button @click="toggleMic">Toggle mic</button>
+      <button @click="toggleTheme">Toggle Theme</button>
       <button @click="toggleScreenShare">Toggle screen share</button>
       <button @click="expandFullscreen">Expand fullscreen</button>
       <button @click="toggleLocalVideo">
@@ -67,6 +68,23 @@ export default {
     toggleMic() {
       this.callFrame.setLocalAudio(!this.callFrame.localAudio());
     },
+    toggleTheme() {
+    this.callFrame.setTheme({
+3	  colors: {
+4	    accent: '#286DA8',
+5	    accentText: '#FFFFFF',
+6	    background: '#FFFFFF',
+7	    backgroundAccent: '#FBFCFD',
+8	    baseText: '#000000',
+9	    border: '#EBEFF4',
+10	    mainAreaBg: '#000000',
+11	    mainAreaBgAccent: '#333333',
+12	    mainAreaText: '#FFFFFF',
+13	    supportiveText: '#808080',
+14	  },
+15	});
+    },
+16	
     toggleScreenShare() {
       const participants = this.callFrame.participants();
       if (participants?.local?.screen) {
