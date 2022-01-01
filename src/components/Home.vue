@@ -121,24 +121,6 @@ export default {
         .on("left-meeting", leaveCall);
 
       callFrame.join({ url, showFullscreenButton: true });
-          // Sample global theme
-        // a very simple custom layout:
-        // this css will display every participant's
-        // video streams in a column down the right side
-        // of the window
-        //
-        callFrame.loadCss({
-          cssText: `
-          .daily-video-div {
-            position: relative;
-            visibility: visible;
-            width: 320;
-            height: 180;
-            margin: 1em;
-            margin-left: auto;
-          }
-        `,
-        });
 
       callFrame.setTheme({
         colors: {
