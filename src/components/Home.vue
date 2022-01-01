@@ -126,11 +126,11 @@ export default {
         colors: {
           accent: '#d911b1',
           accentText: '#FFFFFF',
-          background: '#FFFFFF',
+          background: '#FFFFFFFF',
           backgroundAccent: '#FBFCFD',
           baseText: '#d911b1',
           border: '#EBEFF4',
-          mainAreaBg: '#000000',
+          mainAreaBg: '#FF000000',
           mainAreaBgAccent: '#333333',
           mainAreaText: '#d911b1',
           supportiveText: '#808080',
