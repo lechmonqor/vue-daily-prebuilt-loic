@@ -130,7 +130,7 @@ export default {
           backgroundAccent: '#FBFCFD',
           baseText: '#d911b1',
           border: '#EBEFF4',
-          mainAreaBg: '#000000',opacity:'0.1',
+          mainAreaBg: '#000000',
           mainAreaBgAccent: '#333333',
           mainAreaText: '#d911b1',
           supportiveText: '#808080',
