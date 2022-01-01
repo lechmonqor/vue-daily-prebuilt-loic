@@ -122,6 +122,19 @@ export default {
 
       callFrame.join({ url, showFullscreenButton: true });
           // Sample global theme
+      callFrame.loadCss(properties: {
+    //bodyClass?: string;
+    //cssFile?: string;
+      cssText:
+      .daily-video-div {
+        position: relative;
+        visibility: visible;
+        width: 320;
+        height: 180;
+        margin: 1em;
+        margin-left: auto;
+      };
+      });
       callFrame.setTheme({
         colors: {
           accent: '#d911b1',
